@@ -1,18 +1,149 @@
+/* FONT IMPORT */
+
+@font-face {
+  font-family: 'anironbold';
+  src: url('font/anirb___-webfont.woff2') format('woff2'),
+       url('font/anirb___-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'party_businessregular';
+  src: url('font/partybusiness-webfont.woff2') format('woff2'),
+       url('font/partybusiness-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'tengwar_annatarregular';
+  src: url('font/tngan-webfont.woff2') format('woff2'),
+       url('font/tngan-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+html{
+  font-size: 15 px;
+}
+
+h2{
+   font-family: "anironbold";
+   font-size: 1.4rem;
+}
+
+h2 span{
+  font-size: 1.2rem;
+}
+h3{
+  text-align: left;
+  font-size: 4rem;
+  font-family: 'party_businessregular';
+}
+
+p{
+  font-size: 1.2rem;
+  font-family: 'party_businessregular';
+}
+
+.glyphe{
+color: #fe661d;
+  font-family: 'tengwar_annatarregular';
+  font-size: 2rem;
+  letter-spacing: -5px;
+  padding: 10px;
+}
 
 
 
+/* NAVBAR */
+
+header > nav {
+  background-color: #fe661d;
+  font-family: "anironbold";
+  font-size: 1rem;
+  color: #FFF;
+}
+
+header > nav .active a{
+  border-bottom: 2px solid #FFF;
+}
 
 
+/* BACKGROUND */
+
+body{
+  background: url('images/bg_light.png') repeat;
+}
 
 
-/* HOVER TARGETS */
+/* CAROUSEL */
+
+#home .carousel-caption{
+  bottom: inherit;
+  top: 20%;
+}
+
+#home .carousel-caption .blockquote-footer{
+  float: right;
+  color: #FFF;
+  padding-right: 50px;
+}
+
+#home .carousel-caption p{
+  font-size : 2rem;
+  text-align: left;
+}
+.carousel-control-next-icon,.carousel-control-prev-icon{
+  width: 50px;
+  height: 50px;
+}
+
+
+/* BADGE */
+
+a.badge {
+  font-size :1.5rem;
+  color: #333;
+    font-family: 'party_businessregular';
+    letter-spacing: 2px;
+  }
+
+  a.badge.active{
+    font-size :1.7rem;
+    color: #ff6600;
+    text-decoration: underline;
+    }
+
+    a.badge .glyphe{
+      font-size: 1.5rem;
+    }
+    
+/* CARD AND HOVER TARGETS */
+
+
+div.card {
+  background-color: #202020;
+}
+
+div.card{
+  padding: 5px;
+}
+#fellows div.card .card-text{
+  font-family: 'party_businessregular';
+  font-size: 1.8rem;
+  color: #DDD;
+  height: 60px;
+  z-index: 10;
+  position: relative;
+}
 
 
 .wanted{
     z-index: 0;
   }
   
-  .wanted a:hover .wanted_frame{
+  .wanted:hover .wanted_frame{
     background-color: rgba(255, 255, 255, 0);
     transition: background-color 0.5s;
   }
@@ -26,24 +157,34 @@
     z-index: 5;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.2);   
+    background-color: rgba(88, 88, 88, 0.4);   
     opacity: 100;
     transition: background-color 0.5s;
   }
+
+  .wanted-dead{
+
+    background-color: rgba(50, 50, 50, 0.7);  
+  }
   
   .reward{
+    font-family: 'party_businessregular';
     background-color: rgba(255, 255, 255, 0.7);
-    margin: 20px;
+    margin: 30px;
     color: #111111;
     opacity: 100;
     transition: opacity 0.5s;
-    font-size: 45px;
+    font-size: 2rem;
     text-align: center;
     border-radius: 20px;
     padding: 10px;
+    -webkit-box-shadow: 0 0 20px 5px #fff;
+    box-shadow: 0 0 20px 5px #fff;
   }
+
+
   
-  .wanted a:hover .wanted_frame .reward{
+  .wanted :hover .wanted_frame .reward{
     opacity: 0;
     transition: opacity 0.5s;
   }
@@ -53,17 +194,29 @@
   }
   
   .name{
-    color: #FFF;
+    color: #FFF !important;
     text-align: center;
-    font-size: 80px;
-    margin-top: 150px;
+    font-size: 4rem;;
+    margin-top: 80px;
+    opacity: 1;
     transition: all 0.5s;
+  } 
+
+  .dead{
+    text-align: center;
+    font-size: 4rem;;
+    margin: 50px;
+    opacity: 1;
+    transition: all 0.5s;
+    color: #ff6600;
+  }
+
+ del{
+   color: #ff6600   
   }
   
-  .wanted a:hover .wanted_frame .name{  
-    margin-top: 350px;
-    font-size: 40px;
-    transition: all 0.5s;
+  .wanted :hover .wanted_frame .name, .wanted :hover .dead{
+    opacity: 0;
   }
 
 
