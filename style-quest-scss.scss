@@ -24,10 +24,14 @@ $font-party-business: "party_businessregular";
 $primary-color: #fe661d;
 
 @mixin theRings($x, $color){
-  width: $x*2 + px;
-  height: $x*2 + px;
-  border-radius: $x + px;
-  border: 2px solid $color;
+  width: $x + px;
+  height: $x + px;
+  border-radius: $x/2 + px;
+  border: 4px solid $color;
+  display: inline-block;
+  -webkit-box-shadow: 1px 1px 3px 0 #fe611D;
+  box-shadow: 1px 1px 3px 0 #fe611D;
+  margin: 0 10px;
 }
 
 html{
@@ -40,6 +44,7 @@ h2{
   text-align: center;
    span{
     font-size: 1.2rem;
+    margin-top: 40px;
   }
 }
 
@@ -60,10 +65,9 @@ footer{
 }
 
 #rings{
-  div{
-    @include theRings(10,$primary-color)
-  }
   h2.precious{
-    
+    span{
+      @include theRings(40,$primary-color)
+  }
   }
 }
