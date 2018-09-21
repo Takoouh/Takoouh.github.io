@@ -1,0 +1,69 @@
+@font-face {
+  font-family: 'anironbold';
+  src: url('font/anirb___-webfont.woff2') format('woff2'),
+       url('font/anirb___-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'party_businessregular';
+  src: url('font/partybusiness-webfont.woff2') format('woff2'),
+       url('font/partybusiness-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'tengwar_annatarregular';
+  src: url('font/tngan-webfont.woff2') format('woff2'),
+       url('font/tngan-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$font-party-business: "party_businessregular";
+$primary-color: #fe661d;
+
+@mixin theRings($x, $color){
+  width: $x*2 + px;
+  height: $x*2 + px;
+  border-radius: $x + px;
+  border: 2px solid $color;
+}
+
+html{
+  font-size: 15px;
+}
+
+h2{
+  font-family: "anironbold";
+  font-size: 1.4rem;
+  text-align: center;
+   span{
+    font-size: 1.2rem;
+  }
+}
+
+header {
+  > nav {
+    background-color: $primary-color;
+    font-family: "anironbold";
+    font-size: 1rem;
+    color: #FFF;
+    &.active a{
+      border-bottom: 2px solid #FFF;
+   }
+  } 
+}
+
+footer{
+  background-color: $primary-color;
+}
+
+#rings{
+  div{
+    @include theRings(10,$primary-color)
+  }
+  h2.precious{
+    
+  }
+}

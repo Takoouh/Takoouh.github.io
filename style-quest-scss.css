@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "anironbold";
+  src: url("font/anirb___-webfont.woff2") format("woff2"), url("font/anirb___-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "party_businessregular";
+  src: url("font/partybusiness-webfont.woff2") format("woff2"), url("font/partybusiness-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "tengwar_annatarregular";
+  src: url("font/tngan-webfont.woff2") format("woff2"), url("font/tngan-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  font-size: 15px;
+}
+
+h2 {
+  font-family: "anironbold";
+  font-size: 1.4rem;
+  text-align: center;
+}
+h2 span {
+  font-size: 1.2rem;
+}
+
+header > nav {
+  background-color: #fe661d;
+  font-family: "anironbold";
+  font-size: 1rem;
+  color: #FFF;
+}
+header > nav.active a {
+  border-bottom: 2px solid #FFF;
+}
+
+footer {
+  background-color: #fe661d;
+}
+
+#rings div {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  border: 2px solid #fe661d;
+}
