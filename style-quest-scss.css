@@ -24,10 +24,10 @@ h2 {
   font-family: "anironbold";
   font-size: 1.4rem;
   text-align: center;
-  margin-top: 40px;
 }
 h2 span {
   font-size: 1.2rem;
+  margin-top: 40px;
 }
 
 header > nav {
@@ -50,8 +50,83 @@ footer {
   border-radius: 20px;
   border: 4px solid #fe661d;
   display: inline-block;
-
+  -webkit-box-shadow: 1px 1px 3px 0 #fe661d;
+  box-shadow: 1px 1px 3px 0 #fe661d;
   margin: 0 10px;
-  -webkit-box-shadow: 1px 1px 3px 0 #fe611D;
-box-shadow: 1px 1px 3px 0 #fe611D;
+}
+#rings h2.the_one span {
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  border: 15px solid #f7e036;
+  display: inline-block;
+  -webkit-box-shadow: 1px 1px 3px 0 #f7e036;
+  box-shadow: 1px 1px 3px 0 #f7e036;
+  margin: 0 10px;
+}
+
+span.multi-rings0 {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  border: 1px solid #444;
+  display: inline-block;
+  -webkit-box-shadow: 1px 1px 3px 0 #444;
+  box-shadow: 1px 1px 3px 0 #444;
+  margin: 0 10px;
+}
+
+span.multi-rings1 {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  border: 1px solid #444;
+  display: inline-block;
+  -webkit-box-shadow: 1px 1px 3px 0 #444;
+  box-shadow: 1px 1px 3px 0 #444;
+  margin: 0 10px;
+}
+
+span.multi-rings2 {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  border: 1px solid #444;
+  display: inline-block;
+  -webkit-box-shadow: 1px 1px 3px 0 #444;
+  box-shadow: 1px 1px 3px 0 #444;
+  margin: 0 10px;
+}
+
+span.multi-rings3 {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  border: 1px solid #444;
+  display: inline-block;
+  -webkit-box-shadow: 1px 1px 3px 0 #444;
+  box-shadow: 1px 1px 3px 0 #444;
+  margin: 0 10px;
+}
+
+span.multi-rings4 {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  border: 1px solid #444;
+  display: inline-block;
+  -webkit-box-shadow: 1px 1px 3px 0 #444;
+  box-shadow: 1px 1px 3px 0 #444;
+  margin: 0 10px;
+}
+
+span.multi-rings5 {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  border: 1px solid #444;
+  display: inline-block;
+  -webkit-box-shadow: 1px 1px 3px 0 #444;
+  box-shadow: 1px 1px 3px 0 #444;
+  margin: 0 10px;
 }
