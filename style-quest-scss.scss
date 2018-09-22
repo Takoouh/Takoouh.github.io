@@ -5,20 +5,6 @@
   font-weight: normal;
   font-style: normal;
 }
-@font-face {
-  font-family: 'party_businessregular';
-  src: url('font/partybusiness-webfont.woff2') format('woff2'),
-       url('font/partybusiness-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'tengwar_annatarregular';
-  src: url('font/tngan-webfont.woff2') format('woff2'),
-       url('font/tngan-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
 
 $font-party-business: "party_businessregular";
 $primary-color: #fe661d;
@@ -29,23 +15,13 @@ $primary-color: #fe661d;
   border-radius: $x/2 + px;
   border: $x/10 +px solid $color;
   display: inline-block;
-  -webkit-box-shadow: 1px 1px 3px 0 $color;
-  box-shadow: 1px 1px 3px 0 $color;
-  margin: 0 10px;
+  margin: - $x/2.5 +px 0;
+  -webkit-box-shadow: $x/25+px $x/25+px 10px 0 darken($color,10);
+  box-shadow: $x/25+px $x/25+px 10px 0 darken($color,10);
 }
 
 html{
   font-size: 15px;
-}
-
-h2{
-  font-family: "anironbold";
-  font-size: 1.4rem;
-  text-align: center;
-   span{
-    font-size: 1.2rem;
-    margin-top: 40px;
-  }
 }
 
 header {
@@ -65,24 +41,38 @@ footer{
 }
 
 #rings{
-  h2.precious{
-    span{
-      @include theRings(40,$primary-color)
-    }
-  }
-  h2.the_one{
-    span{
-      @include theRings(150,#f7e036)
+  > div{
+    margin-top: 150px;
+    text-align: center;
+    h2{;
+      font-family: "anironbold";
+      text-align: center;
+      &.precious{
+        span{
+          @include theRings(40,$primary-color);
+          margin-left: 50px;
+          margin-right: 50px;
+        }
+      }
+      &.the_one{
+        span{
+          @include theRings(150,#f7e036);
+          margin-right: 30px;
+        }
+      }
     }
   }
 }
 
+.please{
+  margin: 0 auto 20px auto;
+}
 
-
-$rings-size : 10;
+$rings-size : 30;
 @for $i from 0 to 6{
   span.multi-rings#{$i}{
     @include theRings($rings-size, #444);
-    $rings-size : $rings-size *2
+    margin-right: - $rings-size /2 +px;
   }
+    $rings-size : $rings-size + 5;
 }
